@@ -14,7 +14,7 @@
 }
 
 .animated {
-  animation-duration: 1.5s;
+  animation-duration: 0.4s;
   animation-fill-mode: both;
 }
 
@@ -189,20 +189,24 @@ body .inner-wapper .btn-hover:hover {
   background-color: #2812ff;
   border-color: #2812ff;
 }
-body .protofolio-block .figure-img {
-  position: relative;
+body .protofolio-block .figure .figure-caption {
+  display: none;
+  top: 43%;
+  left: 43%;
 }
-body .protofolio-block .figure-img::after {
+body .protofolio-block .figure:hover::before {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: #333;
-  opacity: 0.6;
-  z-index: 0;
   width: 100%;
   height: 100%;
+  background-color: #333;
+  transition: ease-out 0.4s;
+  opacity: 0.6;
+}
+body .protofolio-block .figure:hover .figure-caption {
+  display: block;
 }
 
 /*!

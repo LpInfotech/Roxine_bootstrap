@@ -57,7 +57,7 @@ $font-size-xsm: 0.856rem;
 
 //animation for web page 
 .animated {
-  animation-duration: 1.5s;
+  animation-duration: .4s;
   animation-fill-mode: both;
 }
 
@@ -286,30 +286,38 @@ body {
   // End inner-wapper section
   //Protofolia block
   .protofolio-block {
-    .figure-img {
-      position: relative;
-    }
-
-    .figure-img::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      background-color: #333;
-      opacity: 0.6;
-      z-index: 0;
-      width: 100%;
-      height: 100%;
+    .figure{
+      .figure-caption{
+        display: none;
+        top:43%;
+        left:43%;
+      }
+      &:hover{
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #333;
+          transition: ease-out 0.4s;
+          opacity: 0.6;
+        }
+       .figure-caption{
+         display: block;
+       }
+      }
+      // &>*{
+      //   position:relative;
+      //   z-index: 1;
+      //   display: inline-block;
+      // }
     }
   }
 
   //End Protofolio block
 }
-
-
-
-
 
 
 // Option A: Include all of Bootstrap
