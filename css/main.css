@@ -189,6 +189,21 @@ body .inner-wapper .btn-hover:hover {
   background-color: #2812ff;
   border-color: #2812ff;
 }
+body .protofolio-block .figure-img {
+  position: relative;
+}
+body .protofolio-block .figure-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #333;
+  opacity: 0.6;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
