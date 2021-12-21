@@ -286,14 +286,15 @@ body {
   // End inner-wapper section
   //Protofolia block
   .protofolio-block {
-    .figure{
-      .figure-caption{
+    .figure {
+      .figure-caption {
         display: none;
-        top:43%;
-        left:43%;
+        top: 43%;
+        left: 43%;
       }
-      &:hover{
-        &::before{
+
+      &:hover {
+        &::before {
           content: "";
           position: absolute;
           top: 0;
@@ -304,10 +305,12 @@ body {
           transition: ease-out 0.4s;
           opacity: 0.6;
         }
-       .figure-caption{
-         display: block;
-       }
+
+        .figure-caption {
+          display: block;
+        }
       }
+
       // &>*{
       //   position:relative;
       //   z-index: 1;
@@ -317,6 +320,21 @@ body {
   }
 
   //End Protofolio block
+  //the life size section
+  .life-section {
+    .block-heading {
+      .main-heading {
+        font-family: system-ui;
+        letter-spacing: 3px;
+      }
+      .sub-heading{
+        letter-spacing: 6px;
+      }
+      .lorem-paragraph{
+          letter-spacing: 1px;
+      }
+    }
+  }
 }
 
 
