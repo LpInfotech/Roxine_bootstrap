@@ -215,8 +215,16 @@ body .life-section .block-heading .main-heading {
 body .life-section .block-heading .sub-heading {
   letter-spacing: 6px;
 }
-body .life-section .block-heading .lorem-paragraph p {
+body .life-section .block-heading .lorem-paragraph {
   letter-spacing: 1px;
+}
+body .life-section .block-heading .btn-primary {
+  background-color: black !important;
+}
+body .life-section .block-heading .btn-primary :hover {
+  background-color: #fff !important;
+  border-color: black !important;
+  color: black !important;
 }
 
 /*!

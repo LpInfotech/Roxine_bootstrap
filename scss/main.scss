@@ -327,12 +327,24 @@ body {
         font-family: system-ui;
         letter-spacing: 3px;
       }
-      .sub-heading{
+
+      .sub-heading {
         letter-spacing: 6px;
       }
-      .lorem-paragraph{
-          letter-spacing: 1px;
+
+      .lorem-paragraph {
+        letter-spacing: 1px;
       }
+
+      .btn-primary{
+        background-color: black !important;
+    :hover {
+        background-color: $white !important;
+        border-color: black !important;
+        color: black !important;
+    }
+  }
+      
     }
   }
 }
