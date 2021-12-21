@@ -1,0 +1,306 @@
+// scss-docs-start theme-colors-map
+$theme-colors: ("primary": #55565b,
+  "secondary": #5645ff, "info":#575757, "light": #f8f8f8);
+
+//variable-color 
+$primary: #55565b;
+$secondary: #5645ff;
+$secondary-hover:#2812ff;
+$white: #fff;
+$info: #575757;
+$light: #f8f8f8;
+
+//font-weight
+$font-weight-lighter: 500;
+
+//font-size
+$font-size-xxsm: 0.75rem;
+$font-size-xsm: 0.856rem;
+
+// @media query
+@mixin media-breakpoint-min-large {
+  @media (min-width:992px) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-max-large {
+  @media (max-width:992px) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-medium {
+  @media (max-width:767px) {
+    @content;
+  }
+}
+
+//button
+.btn {
+  border-radius: 0.25 !important;
+  letter-spacing: 0.1429rem;
+
+}
+
+//font-family
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url(../fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 65\ Medium.ttf);
+}
+
+//animation for banner
+.animated-banner {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+//animation for web page 
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+//===================================================================================
+//body
+body {
+  font-family: 'helvetica-neue' !important;
+  overflow-x: hidden;
+
+  .navbar {
+    z-index: 1000;
+
+    @include media-breakpoint-min-large {
+      position: fixed;
+    }
+
+
+    .dropdown:hover .creativeAgency {
+      display: block !important;
+    }
+
+    .element-dropdown {
+      width: 93%;
+      left: 43px;
+    }
+
+    .nav-link {
+      font-size: $font-size-xxsm !important;
+    }
+
+    .nav-item {
+      .creativeAgency {
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .navbar-toggler {
+
+      &:active,
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+
+    .nav-link {
+      color: $primary;
+
+      @include media-breakpoint-min-large {
+        color: $white;
+      }
+    }
+
+
+
+  }
+
+  .banner-section {
+    width: 100%;
+    height: 102vh;
+    background-image: url("../images/big-14.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner-section {
+    position: relative;
+
+    .image-section {
+      .header-section {
+        top: 0%;
+        left: 10%;
+
+        @include media-breakpoint-medium {
+          left: 0%;
+        }
+
+        h5 {
+          letter-spacing: 7px;
+        }
+
+        .start-up {
+          font-size: 160px;
+          letter-spacing: 14px;
+
+          @include media-breakpoint-max-large {
+            font-size: 110px;
+            letter-spacing: 5px;
+          }
+
+          @include media-breakpoint-medium {
+            font-size: 60px;
+
+          }
+        }
+
+        .Lorem-paragraph {
+          width: 50%;
+
+          @include media-breakpoint-medium {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .banner-section::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 102vh;
+    background-color: #333;
+    opacity: 0.7;
+    z-index: 0;
+
+  }
+
+  .banner-section>* {
+    position: relative;
+    z-index: 1;
+    top: 21%;
+  }
+
+  // content section
+  .content-wrapper {
+    .content-block-heading {
+      letter-spacing: 6px;
+      font-family: system-ui;
+    }
+
+    .content-block-sub-heading {
+      letter-spacing: 6px;
+    }
+
+    .contenet-text {
+      letter-spacing: 3px;
+    }
+
+    .ico-box {
+      border-radius: 0.5rem;
+      background-color: $light;
+
+      .heading-sub {
+        color: $info;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+
+      .sub-paragraph {
+        font-size: $font-size-xsm;
+      }
+
+      &:hover {
+        box-shadow: inset 400px 0 0 0 $white, 1px 1px 14px 1px #d9d6d6;
+        transition: ease-out 0.4s;
+
+        .icon i {
+          color: $secondary;
+        }
+
+        &>.heading-sub {
+          color: $secondary;
+        }
+
+      }
+
+    }
+  }
+
+  // end content section
+  //inner wapper section
+  .inner-wapper {
+    background-image: url(../images/big-15.jpg);
+    width: 100%;
+    background-position: 50% -80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    &>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-heading {
+      font-family: system-ui;
+    }
+
+    &-sub-heading {
+      letter-spacing: 3px;
+    }
+
+    .btn-hover {
+      background-color: $secondary;
+      border-color: $secondary;
+      letter-spacing:3px;
+
+      &:hover {
+        background-color: $secondary-hover;
+        border-color: $secondary-hover;
+      }
+    }
+  }
+  // End inner-wapper section
+  //Protofolia block
+//.protofolio-block{
+  // ul .list::before{
+  //   content: "-";
+  //   display:inline-block;
+  //   color: $info;
+  // }
+//}
+  //End Protofolio block
+}
+
+
+
+
+
+
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
