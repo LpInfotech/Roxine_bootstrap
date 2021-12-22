@@ -9,6 +9,7 @@ $secondary-hover:#2812ff;
 $white: #fff;
 $info: #575757;
 $light: #f8f8f8;
+$dark: #000;
 
 //font-weight
 $font-weight-lighter: 500;
@@ -16,6 +17,12 @@ $font-weight-lighter: 500;
 //font-size
 $font-size-xxsm: 0.75rem;
 $font-size-xsm: 0.856rem;
+
+//font family josefin sans
+$font-family-josefin: 'Josefin Sans';
+//font-family Poppins
+$font-family-poppins: 'Poppins',
+sans-serif;
 
 // @media query
 @mixin media-breakpoint-min-large {
@@ -49,10 +56,13 @@ $font-size-xsm: 0.856rem;
   src: url(../fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 65\ Medium.ttf);
 }
 
-//font family  josfin sans-serif;
+//font family josfin sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
-$font-family: 'Josefin Sans',
-sans-serif;
+
+
+
+//font family Poppins
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:ital,wght@0,200;1,200&display=swap');
 
 //animation for banner
 .animated-banner {
@@ -72,13 +82,13 @@ body {
   font-family: 'helvetica-neue' !important;
   overflow-x: hidden;
 
+  //navbar section
   .navbar {
     z-index: 1000;
 
     @include media-breakpoint-min-large {
       position: fixed;
     }
-
 
     .dropdown:hover .creativeAgency {
       display: block !important;
@@ -116,11 +126,10 @@ body {
         color: $white;
       }
     }
-
-
-
   }
 
+  //End navbar sections
+  //banner section
   .banner-section {
     width: 100%;
     height: 102vh;
@@ -128,10 +137,25 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
 
-  .banner-section {
-    position: relative;
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 102vh;
+      background-color: #333;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    &>* {
+      position: relative;
+      z-index: 1;
+      top: 21%;
+    }
 
     .image-section {
       .header-section {
@@ -142,7 +166,7 @@ body {
           left: 0%;
         }
 
-        h5 {
+        .main-heading {
           letter-spacing: 7px;
         }
 
@@ -161,7 +185,7 @@ body {
           }
         }
 
-        .Lorem-paragraph {
+        .Lorem-paragraph-banner {
           width: 50%;
 
           @include media-breakpoint-medium {
@@ -170,34 +194,14 @@ body {
         }
       }
     }
-
   }
 
-  .banner-section::after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 102vh;
-    background-color: #333;
-    opacity: 0.7;
-    z-index: 0;
-
-  }
-
-  .banner-section>* {
-    position: relative;
-    z-index: 1;
-    top: 21%;
-  }
-
+  //End banner section
   // content section
   .content-wrapper {
     .content-block-heading {
       letter-spacing: 6px;
-      font-family: $font-family;
+      font-family: $font-family-josefin;
     }
 
     .content-block-sub-heading {
@@ -215,7 +219,7 @@ body {
       .heading-sub {
         color: $info;
         letter-spacing: 2px;
-        font-family: $font-family;
+        font-family: $font-family-josefin;
         font-size: 18px;
       }
 
@@ -234,9 +238,7 @@ body {
         &>.heading-sub {
           color: $secondary;
         }
-
       }
-
     }
   }
 
@@ -269,14 +271,14 @@ body {
     }
 
     &-heading {
-      font-family: $font-family;
+      font-family: $font-family-josefin;
     }
 
     &-sub-heading {
       letter-spacing: 3px;
     }
 
-    .btn-hover {
+    .inner-wapper-get-button {
       background-color: $secondary;
       border-color: $secondary;
       letter-spacing: 3px;
@@ -315,64 +317,80 @@ body {
           display: block;
         }
       }
-
-      // &>*{
-      //   position:relative;
-      //   z-index: 1;
-      //   display: inline-block;
-      // }
     }
   }
 
   //End Protofolio block
   //the life size section
-  // .life-secton {
-  //   .block-heading {
-  //     .main-heading {
-  //      font-family: $font-family;
-  //       letter-spacing: 3px;
-  //     }
-
-  //     .sub-heading {
-  //       letter-spacing: 6px;
-  //     }
-
-  //     .lorem-paragraph {
-  //       letter-spacing: 1px;
-  //     }
-
-  //     .btn-primary {
-  //       background-color: black !important;
-
-  //       :hover {
-  //         background-color: $white !important;
-  //         border-color: black !important;
-  //         color: black !important;
-  //       }
-  //     }
-  //   }
-
-  // }
   .life-section {
     .block-heading {
       .main-heading {
-        font-family: $font-family;
+        font-family: $font-family-josefin;
         letter-spacing: 3px;
       }
 
       .sub-heading {
         letter-spacing: 6px;
       }
-      p{
-        font-size:18px !important;
+
+      p {
+        font-size: 18px !important;
         letter-spacing: 1px;
       }
     }
-    .Lorem-paragraph{
+
+    .Lorem-paragraph {
       letter-spacing: 1px;
+      font-family: $font-family-poppins;
     }
-    .web-ul{
+
+    .web-ul {
       font-size: $font-size-xxsm;
+    }
+
+    .view-button {
+      background-color: $dark;
+      color: $white;
+      letter-spacing: 3px;
+      font-size: 18px;
+
+      &:hover {
+        background-color: $white;
+        color: $dark;
+        border-color: 1px solid $dark;
+      }
+    }
+  }
+
+  //End the life size section
+  //work place section
+  .work-place {
+  //   background-image: url(../images/big-01.jpg);
+     width: 100%;
+    height: 980px;
+    background-image: url("../images/big-01.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .block-heading {
+      .main-heading {
+        font-family: $font-family-josefin;
+        letter-spacing: 3px;
+      }
+
+      .sub-heading {
+        letter-spacing: 6px;
+      }
+
+      p {
+        letter-spacing: 1px;
+        font-family: $font-family-poppins;
+      }
+    .dummy-paragraph{
+      @include media-breakpoint-medium{
+        font-size: 12px;
+      }
+    }
     }
   }
 }

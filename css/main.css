@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:ital,wght@0,200;1,200&display=swap");
 .btn {
   border-radius: 0.25 !important;
   letter-spacing: 0.1429rem;
@@ -63,44 +64,6 @@ body .banner-section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .banner-section {
-  position: relative;
-}
-body .banner-section .image-section .header-section {
-  top: 0%;
-  left: 10%;
-}
-@media (max-width: 767px) {
-  body .banner-section .image-section .header-section {
-    left: 0%;
-  }
-}
-body .banner-section .image-section .header-section h5, body .banner-section .image-section .header-section .h5 {
-  letter-spacing: 7px;
-}
-body .banner-section .image-section .header-section .start-up {
-  font-size: 160px;
-  letter-spacing: 14px;
-}
-@media (max-width: 992px) {
-  body .banner-section .image-section .header-section .start-up {
-    font-size: 110px;
-    letter-spacing: 5px;
-  }
-}
-@media (max-width: 767px) {
-  body .banner-section .image-section .header-section .start-up {
-    font-size: 60px;
-  }
-}
-body .banner-section .image-section .header-section .Lorem-paragraph {
-  width: 50%;
-}
-@media (max-width: 767px) {
-  body .banner-section .image-section .header-section .Lorem-paragraph {
-    width: 100%;
-  }
-}
 body .banner-section::after {
   content: " ";
   display: block;
@@ -118,9 +81,44 @@ body .banner-section > * {
   z-index: 1;
   top: 21%;
 }
+body .banner-section .image-section .header-section {
+  top: 0%;
+  left: 10%;
+}
+@media (max-width: 767px) {
+  body .banner-section .image-section .header-section {
+    left: 0%;
+  }
+}
+body .banner-section .image-section .header-section .main-heading {
+  letter-spacing: 7px;
+}
+body .banner-section .image-section .header-section .start-up {
+  font-size: 160px;
+  letter-spacing: 14px;
+}
+@media (max-width: 992px) {
+  body .banner-section .image-section .header-section .start-up {
+    font-size: 110px;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 767px) {
+  body .banner-section .image-section .header-section .start-up {
+    font-size: 60px;
+  }
+}
+body .banner-section .image-section .header-section .Lorem-paragraph-banner {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  body .banner-section .image-section .header-section .Lorem-paragraph-banner {
+    width: 100%;
+  }
+}
 body .content-wrapper .content-block-heading {
   letter-spacing: 6px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
 }
 body .content-wrapper .content-block-sub-heading {
   letter-spacing: 6px;
@@ -135,7 +133,7 @@ body .content-wrapper .ico-box {
 body .content-wrapper .ico-box .heading-sub {
   color: #575757;
   letter-spacing: 2px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 18px;
 }
 body .content-wrapper .ico-box .sub-paragraph {
@@ -176,17 +174,17 @@ body .inner-wapper > * {
   z-index: 1;
 }
 body .inner-wapper-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
 }
 body .inner-wapper-sub-heading {
   letter-spacing: 3px;
 }
-body .inner-wapper .btn-hover {
+body .inner-wapper .inner-wapper-get-button {
   background-color: #5645ff;
   border-color: #5645ff;
   letter-spacing: 3px;
 }
-body .inner-wapper .btn-hover:hover {
+body .inner-wapper .inner-wapper-get-button:hover {
   background-color: #2812ff;
   border-color: #2812ff;
 }
@@ -210,7 +208,7 @@ body .protofolio-block .figure:hover .figure-caption {
   display: block;
 }
 body .life-section .block-heading .main-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   letter-spacing: 3px;
 }
 body .life-section .block-heading .sub-heading {
@@ -222,9 +220,45 @@ body .life-section .block-heading p {
 }
 body .life-section .Lorem-paragraph {
   letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 body .life-section .web-ul {
   font-size: 0.75rem;
+}
+body .life-section .view-button {
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+body .life-section .view-button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: 1px solid #000;
+}
+body .work-place {
+  width: 100%;
+  height: 980px;
+  background-image: url("../images/big-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .work-place .block-heading .main-heading {
+  font-family: "Josefin Sans";
+  letter-spacing: 3px;
+}
+body .work-place .block-heading .sub-heading {
+  letter-spacing: 6px;
+}
+body .work-place .block-heading p {
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 767px) {
+  body .work-place .block-heading .dummy-paragraph {
+    font-size: 12px;
+  }
 }
 
 /*!
@@ -2318,15 +2352,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #000;
+  --bs-table-striped-bg: #0d0d0d;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #1a1a1a;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #131313;
   --bs-table-hover-color: #fff;
   color: #fff;
-  border-color: #373b3e;
+  border-color: #1a1a1a;
 }
 
 .table-responsive {
