@@ -1,8 +1,10 @@
-// scss-docs-start theme-colors-map
+//=========theme color ==============
+
 $theme-colors: ("primary": #55565b,
   "secondary": #5645ff, "info":#575757, "light": #f8f8f8);
 
-//variable-color 
+//========= Variable color ==========
+
 $primary: #55565b;
 $secondary: #5645ff;
 $secondary-hover:#2812ff;
@@ -11,20 +13,38 @@ $info: #575757;
 $light: #f8f8f8;
 $dark: #000;
 
-//font-weight
+//============border radius===========
+
+$border-radius: 0.5rem;
+
+//============font weight============
+
 $font-weight-lighter: 500;
 
-//font-size
-$font-size-xxsm: 0.75rem;
-$font-size-xsm: 0.856rem;
+//============font size================
 
-//font family josefin sans
+$font-size-10:0.625;
+$font-size-12: 0.75rem;
+$font-size-14: 0.856rem;
+$font-size-18:1.125rem;
+
+//=============font family===============
+
 $font-family-josefin: 'Josefin Sans';
-//font-family Poppins
-$font-family-poppins: 'Poppins',
-sans-serif;
+$font-family-poppins: 'Poppins',sans-serif;
 
-// @media query
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url(../fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 65\ Medium.ttf);
+}
+
+//==============Import files================
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+//================meadia querys===============
+
 @mixin media-breakpoint-min-large {
   @media (min-width:992px) {
     @content;
@@ -43,96 +63,84 @@ sans-serif;
   }
 }
 
-//button
-.btn {
-  border-radius: 0.25 !important;
-  letter-spacing: 0.1429rem;
+//================animation for banner===================
 
-}
-
-//font-family
-@font-face {
-  font-family: 'helvetica-neue';
-  src: url(../fonts/neue-helvetica-cufonfonts/Helvetica\ Neue\ LT\ 65\ Medium.ttf);
-}
-
-//font family josfin sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
-
-
-
-//font family Poppins
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins:ital,wght@0,200;1,200&display=swap');
-
-//animation for banner
 .animated-banner {
   animation-duration: 10s;
   animation-fill-mode: both;
 }
 
-//animation for web page 
+//===============animation for inner web page===========
+
 .animated {
   animation-duration: .4s;
   animation-fill-mode: both;
 }
 
-//===================================================================================
-//body
+//=================body========================
+
 body {
   font-family: 'helvetica-neue' !important;
-  overflow-x: hidden;
 
-  //navbar section
-  .navbar {
-    z-index: 1000;
+ //================header====================
+  header {
 
-    @include media-breakpoint-min-large {
-      position: fixed;
-    }
+//==================navbar starts===========
 
-    .dropdown:hover .creativeAgency {
-      display: block !important;
-    }
+    .navbar {
+      z-index: 1000;
 
-    .element-dropdown {
-      width: 93%;
-      left: 43px;
-    }
+      @include media-breakpoint-min-large {
+        position: fixed;
+      }
 
-    .nav-link {
-      font-size: $font-size-xxsm !important;
-    }
+      .dropdown:hover .creativeAgency {
+        display: block !important;
+      }
 
-    .nav-item {
-      .creativeAgency {
-        li {
-          font-size: 10px;
+      .element-dropdown {
+        width: 93%;
+        left: 43px;
+      }
+
+      .nav-link {
+        font-size: $font-size-12 !important;
+      }
+
+      .nav-item {
+        .creativeAgency {
+          li {
+            font-size: $font-size-10;
+          }
+        }
+      }
+
+      .navbar-toggler {
+
+        &:active,
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+
+      .nav-link {
+        color: $primary;
+
+        @include media-breakpoint-min-large {
+          color: $white;
         }
       }
     }
 
-    .navbar-toggler {
-
-      &:active,
-      &:focus {
-        box-shadow: none !important;
-      }
-    }
-
-    .nav-link {
-      color: $primary;
-
-      @include media-breakpoint-min-large {
-        color: $white;
-      }
-    }
   }
 
-  //End navbar sections
-  //banner section
+//==================End navbar==================
+
+//===================banner section start================
+
   .banner-section {
     width: 100%;
-    height: 102vh;
+    height: 100vh;
     background-image: url("../images/big-14.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -145,7 +153,7 @@ body {
       left: 0;
       top: 0;
       width: 100%;
-      height: 102vh;
+      height: 100vh;
       background-color: #333;
       opacity: 0.7;
       z-index: 0;
@@ -196,9 +204,11 @@ body {
     }
   }
 
-  //End banner section
-  // content section
-  .content-wrapper {
+//======================End banner section============
+
+//================content section start=============
+
+.content-wrapper {
     .content-block-heading {
       letter-spacing: 6px;
       font-family: $font-family-josefin;
@@ -213,18 +223,18 @@ body {
     }
 
     .ico-box {
-      border-radius: 0.5rem;
+      border-radius: $border-radius;
       background-color: $light;
 
       .heading-sub {
         color: $info;
         letter-spacing: 2px;
         font-family: $font-family-josefin;
-        font-size: 18px;
+        font-size: $font-size-18;
       }
 
       .sub-paragraph {
-        font-size: $font-size-xsm;
+        font-size: $font-size-14;
       }
 
       &:hover {
@@ -242,8 +252,9 @@ body {
     }
   }
 
-  // end content section
-  //inner wapper section
+//===================End content section===================
+
+//====================inner wapper section================
   .inner-wapper {
     background-image: url(../images/big-15.jpg);
     width: 100%;
@@ -289,9 +300,10 @@ body {
       }
     }
   }
+//====================End inner-wapper section==========
 
-  // End inner-wapper section
-  //Protofolia block
+//====================Protofolia block================
+
   .protofolio-block {
     .figure {
       .figure-caption {
@@ -320,8 +332,10 @@ body {
     }
   }
 
-  //End Protofolio block
-  //the life size section
+//====================End Protofolia block================
+
+//====================the life size section================
+
   .life-section {
     .block-heading {
       .main-heading {
@@ -334,7 +348,7 @@ body {
       }
 
       p {
-        font-size: 18px !important;
+        font-size: $font-size-18 !important;
         letter-spacing: 1px;
       }
     }
@@ -345,33 +359,34 @@ body {
     }
 
     .web-ul {
-      font-size: $font-size-xxsm;
+      font-size: $font-size-12;
     }
 
     .view-button {
       background-color: $dark;
       color: $white;
       letter-spacing: 3px;
-      font-size: 18px;
+      font-size: $font-size-18;
+      border-color:$dark !important;
 
       &:hover {
         background-color: $white;
         color: $dark;
-        border-color: 1px solid $dark;
       }
     }
   }
+//====================End the life size section================
 
-  //End the life size section
-  //work place section
+//====================work place section================
+ 
   .work-place {
-  //   background-image: url(../images/big-01.jpg);
-     width: 100%;
+    width: 100%;
     height: 980px;
     background-image: url("../images/big-01.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
     .block-heading {
       .main-heading {
         font-family: $font-family-josefin;
@@ -386,17 +401,15 @@ body {
         letter-spacing: 1px;
         font-family: $font-family-poppins;
       }
-    .dummy-paragraph{
-      @include media-breakpoint-medium{
-        font-size: 12px;
+
+      .dummy-paragraph {
+        @include media-breakpoint-medium {
+          font-size: $font-size-12;
+        }
       }
-    }
     }
   }
 }
-
-
-// Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
 
