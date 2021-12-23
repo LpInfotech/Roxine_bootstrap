@@ -31,7 +31,8 @@ $font-size-18:1.125rem;
 //=============font family===============
 
 $font-family-josefin: 'Josefin Sans';
-$font-family-poppins: 'Poppins',sans-serif;
+$font-family-poppins: 'Poppins',
+sans-serif;
 
 @font-face {
   font-family: 'helvetica-neue';
@@ -89,7 +90,13 @@ $font-family-poppins: 'Poppins',sans-serif;
 .sub-heading {
   letter-spacing: 6px;
 }
+
 .Lorem-paragraph {
+  letter-spacing: 1px;
+  font-family: $font-family-poppins;
+}
+.paragraph{
+  font-size: $font-size-18 !important;
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
@@ -97,10 +104,10 @@ $font-family-poppins: 'Poppins',sans-serif;
 body {
   font-family: 'helvetica-neue' !important;
 
- //================header====================
+  //================header====================
   header {
 
-//==================navbar starts===========
+    //==================navbar starts===========
 
     .navbar {
       z-index: 1000;
@@ -149,9 +156,9 @@ body {
 
   }
 
-//==================End navbar==================
+  //==================End navbar==================
 
-//===================banner section start===========
+  //===================banner section start===========
 
   .banner-section {
     width: 100%;
@@ -219,14 +226,11 @@ body {
     }
   }
 
-//======================End banner section============
+  //======================End banner section============
 
-//================content section start=============
+  //================content section start=============
 
-.content-wrapper {
-    .contenet-text {
-      letter-spacing: 3px;
-    }
+  .content-wrapper {
 
     .ico-box {
       border-radius: $border-radius;
@@ -258,9 +262,9 @@ body {
     }
   }
 
-//===================End content section===================
+  //===================End content section===================
 
-//====================inner wapper section================
+  //====================inner wapper section================
   .inner-wapper {
     background-image: url(../images/big-15.jpg);
     width: 100%;
@@ -306,9 +310,10 @@ body {
       }
     }
   }
-//====================End inner-wapper section==========
 
-//====================Protofolia block================
+  //====================End inner-wapper section==========
+
+  //====================Protofolia block================
 
   .protofolio-block {
     .figure {
@@ -338,17 +343,13 @@ body {
     }
   }
 
-//====================End Protofolia block================
+  //====================End Protofolia block================
 
-//====================the life size section================
+  //====================the life size section================
 
   .life-section {
-    .block-heading {
-      p {
-        font-size: $font-size-18 !important;
-        letter-spacing: 1px;
-      }
-    }
+    
+
     .web-ul {
       font-size: $font-size-12;
     }
@@ -358,7 +359,7 @@ body {
       color: $white;
       letter-spacing: 3px;
       font-size: $font-size-18;
-      border-color:$dark !important;
+      border-color: $dark !important;
 
       &:hover {
         background-color: $white;
@@ -366,10 +367,11 @@ body {
       }
     }
   }
-//====================End the life size section================
 
-//====================work place section================
- 
+  //====================End the life size section================
+
+  //====================work place section================
+
   .work-place {
     width: 100%;
     height: 980px;
@@ -386,29 +388,95 @@ body {
       }
     }
   }
-//===========End Work Place============
 
-//===========team-work-section=========
+  //===========End Work Place============
 
-.team-work-section{
-  .carousel{
-    .carousel-control-prev{
-      left: -10%;
+  //===========team-work-section=========
+
+  .team-work-section {
+    .carousel {
+      .carousel-control-prev {
+        left: -10%;
+      }
+
+      .carousel-control-next {
+        right: -10%;
+      }
+
+      .carousel-item {
+        .hello{
+          opacity: 0;
+        }
+        .team-column:hover .hello {
+          display: block;
+          opacity: 1;
+          transform: translate(0,-200px);
+          transition: ease-out 0.4s;
+        }
+      }
     }
-    .carousel-control-next{
-      right:-10%;
+  }
+
+  //===========End team-work-section=======
+
+//=============All over records============
+.record-section {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/visual-small-11.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, .8);
+    opacity: 0.7;
+    z-index: 0;
+  }
+  .record-row{
+    z-index: 1;
+
+    .record-column:hover{
+      background-color:$secondary;
+      transition: ease-out 0.4s;
     }
-   .carousel-item{
-     .team-column:hover .hello{
-      display: block;
-      transition: 3s;
-    transform: translateY(-200px);
-      
-     }
-   }
   }
 }
-//===========End team-work-section=======
+// .record-section{
+//   width: 100%;
+//   background-image: url("../images/visual-small-11.jpg");
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: relative;
+
+//   .record-section::before{
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//     top: 0;
+//     width: 100%;
+//     background-color: #333;
+//     opacity: 0.7;
+//     z-index: 0;
+//   }
+// }
+//============End All over records=========
+
+//============Testimonial section==========
+.testimonial-section {
+  .carousel-img-3{
+    width:10%;
+  }
+}
 }
 
 //=============import file of bootstrap===================

@@ -29,6 +29,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+.paragraph {
+  font-size: 1.125rem !important;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   font-family: "helvetica-neue" !important;
 }
@@ -124,9 +130,6 @@ body .banner-section .image-section .header-section .Lorem-paragraph-banner {
     width: 100%;
   }
 }
-body .content-wrapper .contenet-text {
-  letter-spacing: 3px;
-}
 body .content-wrapper .ico-box {
   border-radius: 0.5rem;
   background-color: #f8f8f8;
@@ -208,10 +211,6 @@ body .protofolio-block .figure:hover::before {
 body .protofolio-block .figure:hover .figure-caption {
   display: block;
 }
-body .life-section .block-heading p {
-  font-size: 1.125rem !important;
-  letter-spacing: 1px;
-}
 body .life-section .web-ul {
   font-size: 0.75rem;
 }
@@ -245,10 +244,44 @@ body .team-work-section .carousel .carousel-control-prev {
 body .team-work-section .carousel .carousel-control-next {
   right: -10%;
 }
+body .team-work-section .carousel .carousel-item .hello {
+  opacity: 0;
+}
 body .team-work-section .carousel .carousel-item .team-column:hover .hello {
   display: block;
-  transition: 3s;
-  transform: translateY(-200px);
+  opacity: 1;
+  transform: translate(0, -200px);
+  transition: ease-out 0.4s;
+}
+body .record-section {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/visual-small-11.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .record-section::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.7;
+  z-index: 0;
+}
+body .record-section .record-row {
+  z-index: 1;
+}
+body .record-section .record-row .record-column:hover {
+  background-color: #5645ff;
+  transition: ease-out 0.4s;
+}
+body .testimonial-section .carousel-img-3 {
+  width: 10%;
 }
 
 /*!
