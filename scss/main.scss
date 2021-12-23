@@ -1,7 +1,7 @@
 //=========theme color ==============
 
 $theme-colors: ("primary": #55565b,
-  "secondary": #5645ff, "info":#575757, "light": #f8f8f8);
+  "secondary": #5645ff, "info":#575757, "light": #f8f8f8, "dark":#212121, "warning":#7d7d7d);
 
 //========= Variable color ==========
 
@@ -11,7 +11,8 @@ $secondary-hover:#2812ff;
 $white: #fff;
 $info: #575757;
 $light: #f8f8f8;
-$dark: #000;
+$dark: #212121;
+
 
 //============border radius===========
 
@@ -95,11 +96,13 @@ sans-serif;
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
-.paragraph{
+
+.paragraph {
   font-size: $font-size-18 !important;
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
+
 //==========================================================================================================
 body {
   font-family: 'helvetica-neue' !important;
@@ -348,7 +351,7 @@ body {
   //====================the life size section================
 
   .life-section {
-    
+
 
     .web-ul {
       font-size: $font-size-12;
@@ -404,13 +407,14 @@ body {
       }
 
       .carousel-item {
-        .hello{
+        .hello {
           opacity: 0;
         }
+
         .team-column:hover .hello {
           display: block;
           opacity: 1;
-          transform: translate(0,-200px);
+          transform: translate(0, -200px);
           transition: ease-out 0.4s;
         }
       }
@@ -419,64 +423,92 @@ body {
 
   //===========End team-work-section=======
 
-//=============All over records============
-.record-section {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/visual-small-11.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  &::after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
+  //=============All over records============
+  .record-section {
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, .8);
-    opacity: 0.7;
-    z-index: 0;
-  }
-  .record-row{
-    z-index: 1;
+    background-image: url("../images/visual-small-11.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .record-column:hover{
-      background-color:$secondary;
-      transition: ease-out 0.4s;
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .8);
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .record-row {
+      z-index: 1;
+
+      .record-column:hover {
+        background-color: $secondary;
+        transition: ease-out 0.4s;
+      }
     }
   }
-}
-// .record-section{
-//   width: 100%;
-//   background-image: url("../images/visual-small-11.jpg");
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   position: relative;
 
-//   .record-section::before{
-//     content: ' ';
-//     display: block;
-//     position: absolute;
-//     bottom: 0;
-//     top: 0;
-//     width: 100%;
-//     background-color: #333;
-//     opacity: 0.7;
-//     z-index: 0;
-//   }
-// }
-//============End All over records=========
+  // .record-section{
+  //   width: 100%;
+  //   background-image: url("../images/visual-small-11.jpg");
+  //   background-position: center center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   position: relative;
 
-//============Testimonial section==========
-.testimonial-section {
-  .carousel-img-3{
-    width:10%;
+  //   .record-section::before{
+  //     content: ' ';
+  //     display: block;
+  //     position: absolute;
+  //     bottom: 0;
+  //     top: 0;
+  //     width: 100%;
+  //     background-color: #333;
+  //     opacity: 0.7;
+  //     z-index: 0;
+  //   }
+  // }
+  //============End All over records=========
+
+  //============Testimonial section==========
+  // .testimonial-section {
+  //   .carousel-img-3 {
+  //     width: 10%;
+  //   }
+  // }
+
+  //===========Footer================================================================
+  .footer-section{
+    a:hover{
+      color:$white;
+    }
+    i:hover{
+      color:$secondary;
+    }
+    // .facebook-icon:hover{
+    //   color:$secondary;
+    // }
+    // .twitter-icon:hover{
+    //   color:$secondary;
+    // }
+    // .google-icon:hover{
+    //   color:$secondary;
+    // }
+    // .pinterest-icon:hover{
+    //   color:$secondary;
+    // }
+    // .basketball-icon:hover{
+    //   color:$secondary;
+    // }
+
   }
-}
 }
 
 //=============import file of bootstrap===================
