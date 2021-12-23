@@ -79,6 +79,21 @@ $font-family-poppins: 'Poppins',sans-serif;
 
 //=================body========================
 
+//================globle classes========================
+
+.main-heading {
+  font-family: $font-family-josefin;
+  letter-spacing: 3px;
+}
+
+.sub-heading {
+  letter-spacing: 6px;
+}
+.Lorem-paragraph {
+  letter-spacing: 1px;
+  font-family: $font-family-poppins;
+}
+//==========================================================================================================
 body {
   font-family: 'helvetica-neue' !important;
 
@@ -136,7 +151,7 @@ body {
 
 //==================End navbar==================
 
-//===================banner section start================
+//===================banner section start===========
 
   .banner-section {
     width: 100%;
@@ -174,7 +189,7 @@ body {
           left: 0%;
         }
 
-        .main-heading {
+        .main-heading1 {
           letter-spacing: 7px;
         }
 
@@ -209,15 +224,6 @@ body {
 //================content section start=============
 
 .content-wrapper {
-    .content-block-heading {
-      letter-spacing: 6px;
-      font-family: $font-family-josefin;
-    }
-
-    .content-block-sub-heading {
-      letter-spacing: 6px;
-    }
-
     .contenet-text {
       letter-spacing: 3px;
     }
@@ -338,26 +344,11 @@ body {
 
   .life-section {
     .block-heading {
-      .main-heading {
-        font-family: $font-family-josefin;
-        letter-spacing: 3px;
-      }
-
-      .sub-heading {
-        letter-spacing: 6px;
-      }
-
       p {
         font-size: $font-size-18 !important;
         letter-spacing: 1px;
       }
     }
-
-    .Lorem-paragraph {
-      letter-spacing: 1px;
-      font-family: $font-family-poppins;
-    }
-
     .web-ul {
       font-size: $font-size-12;
     }
@@ -388,20 +379,6 @@ body {
     background-size: cover;
 
     .block-heading {
-      .main-heading {
-        font-family: $font-family-josefin;
-        letter-spacing: 3px;
-      }
-
-      .sub-heading {
-        letter-spacing: 6px;
-      }
-
-      p {
-        letter-spacing: 1px;
-        font-family: $font-family-poppins;
-      }
-
       .dummy-paragraph {
         @include media-breakpoint-medium {
           font-size: $font-size-12;
@@ -409,8 +386,31 @@ body {
       }
     }
   }
+//===========End Work Place============
+
+//===========team-work-section=========
+
+.team-work-section{
+  .carousel{
+    .carousel-control-prev{
+      left: -10%;
+    }
+    .carousel-control-next{
+      right:-10%;
+    }
+   .carousel-item{
+     .team-column:hover .hello{
+      display: block;
+      transition: 3s;
+    transform: translateY(-200px);
+      
+     }
+   }
+  }
+}
+//===========End team-work-section=======
 }
 
-// Include any default variable overrides here (though functions won't be available)
+//=============import file of bootstrap===================
 
 @import "../node_modules/bootstrap/scss/bootstrap";
