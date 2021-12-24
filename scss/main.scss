@@ -24,7 +24,7 @@ $font-weight-lighter: 500;
 
 //============font size================
 
-$font-size-10:0.625;
+$font-size-10:0.625rem;
 $font-size-12: 0.75rem;
 $font-size-14: 0.856rem;
 $font-size-18:1.125rem;
@@ -89,7 +89,7 @@ sans-serif;
 }
 
 .sub-heading {
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 .Lorem-paragraph {
@@ -102,7 +102,10 @@ sans-serif;
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
-
+.roxin-button{
+  font-family:$font-family-poppins;
+  letter-spacing:3px;
+}
 //==========================================================================================================
 body {
   font-family: 'helvetica-neue' !important;
@@ -111,51 +114,57 @@ body {
   header {
 
     //==================navbar starts===========
-
-    .navbar {
-      z-index: 1000;
-
-      @include media-breakpoint-min-large {
-        position: fixed;
-      }
-
-      .dropdown:hover .creativeAgency {
-        display: block !important;
-      }
-
-      .element-dropdown {
-        width: 93%;
-        left: 43px;
-      }
-
-      .nav-link {
-        font-size: $font-size-12 !important;
-      }
-
-      .nav-item {
-        .creativeAgency {
-          li {
-            font-size: $font-size-10;
-          }
+.navbar{
+  .nav-link{
+    @include media-breakpoint-max-large{
+      color:$dark !important;
         }
-      }
+  }
+  @include media-breakpoint-max-large{
+background-color:white !important;
+  }
+}
+    
+    // .navbar {
+    //   z-index: 1000;
 
-      .navbar-toggler {
+    //   .dropdown:hover .creativeAgency {
+    //     display: block !important;
+    //   }
 
-        &:active,
-        &:focus {
-          box-shadow: none !important;
-        }
-      }
+    //   .element-dropdown {
+    //     width: 93%;
+    //     left: 43px;
+    //   }
 
-      .nav-link {
-        color: $primary;
+    //   .nav-link {
+    //     font-size: $font-size-12 !important;
+    //   }
 
-        @include media-breakpoint-min-large {
-          color: $white;
-        }
-      }
-    }
+    //   .nav-item {
+    //     .creativeAgency {
+    //       li {
+    //         font-size: $font-size-10;
+    //       }
+    //     }
+    //   }
+
+    //   .navbar-toggler {
+
+    //     &:active,
+    //     &:focus {
+    //       box-shadow: none !important;
+    //     }
+    //   }
+
+    //   .nav-link {
+    //     color: $primary;
+
+    //     @include media-breakpoint-min-large {
+    //       color: $white;
+    //     }
+    //   }
+    // }
 
   }
 
@@ -199,10 +208,6 @@ body {
           left: 0%;
         }
 
-        .main-heading1 {
-          letter-spacing: 7px;
-        }
-
         .start-up {
           font-size: 160px;
           letter-spacing: 14px;
@@ -218,7 +223,7 @@ body {
           }
         }
 
-        .Lorem-paragraph-banner {
+        p{
           width: 50%;
 
           @include media-breakpoint-medium {
@@ -293,20 +298,11 @@ body {
       position: relative;
       z-index: 1;
     }
-
-    &-heading {
+    .sub-heading {
       font-family: $font-family-josefin;
     }
 
-    &-sub-heading {
-      letter-spacing: 3px;
-    }
-
     .inner-wapper-get-button {
-      background-color: $secondary;
-      border-color: $secondary;
-      letter-spacing: 3px;
-
       &:hover {
         background-color: $secondary-hover;
         border-color: $secondary-hover;
@@ -358,12 +354,6 @@ body {
     }
 
     .view-button {
-      background-color: $dark;
-      color: $white;
-      letter-spacing: 3px;
-      font-size: $font-size-18;
-      border-color: $dark !important;
-
       &:hover {
         background-color: $white;
         color: $dark;

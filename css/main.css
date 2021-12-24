@@ -21,7 +21,7 @@
 }
 
 .sub-heading {
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 .Lorem-paragraph {
@@ -35,39 +35,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+.roxin-button {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
 body {
   font-family: "helvetica-neue" !important;
 }
-body header .navbar {
-  z-index: 1000;
-}
-@media (min-width: 992px) {
-  body header .navbar {
-    position: fixed;
+@media (max-width: 992px) {
+  body header .navbar .nav-link {
+    color: #212121 !important;
   }
 }
-body header .navbar .dropdown:hover .creativeAgency {
-  display: block !important;
-}
-body header .navbar .element-dropdown {
-  width: 93%;
-  left: 43px;
-}
-body header .navbar .nav-link {
-  font-size: 0.75rem !important;
-}
-body header .navbar .nav-item .creativeAgency li {
-  font-size: 0.625;
-}
-body header .navbar .navbar-toggler:active, body header .navbar .navbar-toggler:focus {
-  box-shadow: none !important;
-}
-body header .navbar .nav-link {
-  color: #55565b;
-}
-@media (min-width: 992px) {
-  body header .navbar .nav-link {
-    color: #fff;
+@media (max-width: 992px) {
+  body header .navbar {
+    background-color: white !important;
   }
 }
 body .banner-section {
@@ -104,9 +87,6 @@ body .banner-section .image-section .header-section {
     left: 0%;
   }
 }
-body .banner-section .image-section .header-section .main-heading1 {
-  letter-spacing: 7px;
-}
 body .banner-section .image-section .header-section .start-up {
   font-size: 160px;
   letter-spacing: 14px;
@@ -122,11 +102,11 @@ body .banner-section .image-section .header-section .start-up {
     font-size: 60px;
   }
 }
-body .banner-section .image-section .header-section .Lorem-paragraph-banner {
+body .banner-section .image-section .header-section p {
   width: 50%;
 }
 @media (max-width: 767px) {
-  body .banner-section .image-section .header-section .Lorem-paragraph-banner {
+  body .banner-section .image-section .header-section p {
     width: 100%;
   }
 }
@@ -177,16 +157,8 @@ body .inner-wapper > * {
   position: relative;
   z-index: 1;
 }
-body .inner-wapper-heading {
+body .inner-wapper .sub-heading {
   font-family: "Josefin Sans";
-}
-body .inner-wapper-sub-heading {
-  letter-spacing: 3px;
-}
-body .inner-wapper .inner-wapper-get-button {
-  background-color: #5645ff;
-  border-color: #5645ff;
-  letter-spacing: 3px;
 }
 body .inner-wapper .inner-wapper-get-button:hover {
   background-color: #2812ff;
@@ -213,13 +185,6 @@ body .protofolio-block .figure:hover .figure-caption {
 }
 body .life-section .web-ul {
   font-size: 0.75rem;
-}
-body .life-section .view-button {
-  background-color: #212121;
-  color: #fff;
-  letter-spacing: 3px;
-  font-size: 1.125rem;
-  border-color: #212121 !important;
 }
 body .life-section .view-button:hover {
   background-color: #fff;
