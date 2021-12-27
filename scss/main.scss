@@ -12,7 +12,7 @@ $white: #fff;
 $info: #575757;
 $light: #f8f8f8;
 $dark: #212121;
-
+$warning:#7d7d7d;
 
 //============border radius===========
 
@@ -102,10 +102,12 @@ sans-serif;
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
-.roxin-button{
-  font-family:$font-family-poppins;
-  letter-spacing:3px;
+
+.roxin-button {
+  font-family: $font-family-poppins;
+  letter-spacing: 3px;
 }
+
 //==========================================================================================================
 body {
   font-family: 'helvetica-neue' !important;
@@ -114,17 +116,18 @@ body {
   header {
 
     //==================navbar starts===========
-.navbar{
-  .nav-link{
-    @include media-breakpoint-max-large{
-      color:$dark !important;
+    .navbar {
+      .nav-link {
+        @include media-breakpoint-max-large {
+          color: $dark !important;
         }
-  }
-  @include media-breakpoint-max-large{
-background-color:white !important;
-  }
-}
-    
+      }
+
+      @include media-breakpoint-max-large {
+        background-color: white !important;
+      }
+    }
+
     .navbar {
       z-index: 1000;
 
@@ -223,7 +226,7 @@ background-color:white !important;
           }
         }
 
-        p{
+        p {
           max-width: 50%;
 
           @include media-breakpoint-medium {
@@ -299,6 +302,7 @@ background-color:white !important;
       position: relative;
       z-index: 1;
     }
+
     .sub-heading {
       font-family: $font-family-josefin;
     }
@@ -446,43 +450,16 @@ background-color:white !important;
     }
   }
 
-  // .record-section{
-  //   width: 100%;
-  //   background-image: url("../images/visual-small-11.jpg");
-  //   background-position: center center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   position: relative;
-
-  //   .record-section::before{
-  //     content: ' ';
-  //     display: block;
-  //     position: absolute;
-  //     bottom: 0;
-  //     top: 0;
-  //     width: 100%;
-  //     background-color: #333;
-  //     opacity: 0.7;
-  //     z-index: 0;
-  //   }
-  // }
-  //============End All over records=========
-
-  //============Testimonial section==========
-  // .testimonial-section {
-  //   .carousel-img-3 {
-  //     width: 10%;
-  //   }
-  // }
-
   //===========Footer================================================================
-  .footer-section{
-    a:hover{
-      color:$white;
+  .footer-section {
+    a:hover {
+      color: $white;
     }
-    i:hover{
-      color:$secondary;
+
+    i:hover {
+      color: $secondary;
     }
+
     // .facebook-icon:hover{
     //   color:$secondary;
     // }
