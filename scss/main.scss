@@ -92,7 +92,7 @@ sans-serif;
   letter-spacing: 4px;
 }
 
-.Lorem-paragraph {
+.sub-para {
   letter-spacing: 1px;
   font-family: $font-family-poppins;
 }
@@ -136,7 +136,7 @@ body {
       }
 
       .element-dropdown {
-        width: 93%;
+      right:60px;
         left: 43px;
       }
 
@@ -166,6 +166,10 @@ body {
         @include media-breakpoint-min-large {
           color: $white;
         }
+      }
+      .shopping-cart-ul{
+        top:95%;
+        right:0;
       }
     }
 
@@ -216,7 +220,7 @@ body {
           letter-spacing: 14px;
 
           @include media-breakpoint-max-large {
-            font-size: 110px;
+            font-size: 130px;
             letter-spacing: 5px;
           }
 
@@ -379,7 +383,7 @@ body {
     background-size: cover;
 
     .block-heading {
-      .dummy-paragraph {
+      .short-para {
         @include media-breakpoint-medium {
           font-size: $font-size-12;
         }
@@ -391,30 +395,30 @@ body {
 
   //===========team-work-section=========
 
-  .team-work-section {
-    .carousel {
-      .carousel-control-prev {
-        left: -10%;
-      }
+  //.team-work-section {
+   // .carousel {
+      //.carousel-control-prev {
+      //   left: -10%;
+      // }
 
-      .carousel-control-next {
-        right: -10%;
-      }
+      // .carousel-control-next {
+      //   right: -10%;
+      // }
+//===================carousel hover trasition==============
+      // .carousel-item {
+      //   .hello {
+      //     opacity: 0;
+      //   }
 
-      .carousel-item {
-        .hello {
-          opacity: 0;
-        }
-
-        .team-column:hover .hello {
-          display: block;
-          opacity: 1;
-          transform: translate(0, -200px);
-          transition: ease-out 0.4s;
-        }
-      }
-    }
-  }
+      //   .team-column:hover .hello {
+      //     display: block;
+      //     opacity: 1;
+      //     transform: translate(0, -200px);
+      //     transition: ease-out 0.4s;
+      //   }
+      // }
+   // }
+  //}
 
   //===========End team-work-section=======
 

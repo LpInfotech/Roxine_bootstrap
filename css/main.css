@@ -24,7 +24,7 @@
   letter-spacing: 4px;
 }
 
-.Lorem-paragraph {
+.sub-para {
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
 }
@@ -60,7 +60,7 @@ body header .navbar .dropdown:hover .creative-agency {
   display: block !important;
 }
 body header .navbar .element-dropdown {
-  width: 93%;
+  right: 60px;
   left: 43px;
 }
 body header .navbar .nav-link {
@@ -79,6 +79,10 @@ body header .navbar .nav-link {
   body header .navbar .nav-link {
     color: #fff;
   }
+}
+body header .navbar .shopping-cart-ul {
+  top: 95%;
+  right: 0;
 }
 body .banner-section {
   width: 100%;
@@ -120,7 +124,7 @@ body .banner-section .image-section .header-section .start-up {
 }
 @media (max-width: 992px) {
   body .banner-section .image-section .header-section .start-up {
-    font-size: 110px;
+    font-size: 130px;
     letter-spacing: 5px;
   }
 }
@@ -227,24 +231,9 @@ body .work-place {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  body .work-place .block-heading .dummy-paragraph {
+  body .work-place .block-heading .short-para {
     font-size: 0.75rem;
   }
-}
-body .team-work-section .carousel .carousel-control-prev {
-  left: -10%;
-}
-body .team-work-section .carousel .carousel-control-next {
-  right: -10%;
-}
-body .team-work-section .carousel .carousel-item .hello {
-  opacity: 0;
-}
-body .team-work-section .carousel .carousel-item .team-column:hover .hello {
-  display: block;
-  opacity: 1;
-  transform: translate(0, -200px);
-  transition: ease-out 0.4s;
 }
 body .record-section {
   width: 100%;
