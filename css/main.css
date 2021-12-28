@@ -11,7 +11,7 @@
 }
 
 .animated {
-  animation-duration: 0.4s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
 }
 
@@ -11235,7 +11235,20 @@ textarea.form-control-lg {
   font-family: "Josefin Sans";
 }
 
-.about-section-second .main-paragraph p {
+.about-section-2 .image-column img {
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .about-section-2 .image-column img {
+    height: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .about-section-2 .column-wraping {
+    max-width: 450px;
+  }
+}
+.about-section-2 .main-paragraph p {
   font-size: 13px;
 }
 

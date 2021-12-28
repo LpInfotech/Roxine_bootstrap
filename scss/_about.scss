@@ -50,17 +50,31 @@
     }
 }
 //section second
-.about-section-second{
+.about-section-2{
+     .image-column{
+         img{
+            object-fit: cover;
+            @include media-breakpoint-min-large{
+                height:650px;
+            }
+         }
+    //     background-image: url(../images/img-09.jpg);
+    //     background-position:center;
+    //     background-repeat:no-repeat;
+    //     background-size: cover;
+    //     height:650px;
+       
+    }
+    .column-wraping{
+        @include media-breakpoint-min-large{
+            max-width:450px;
+        }
+    }
     .main-paragraph{
         p{
             font-size:13px;
         }
     }
-    //  img{
-    //        @include media-breakpoint-min-large{
-    //         min-height:550px;
-    //        }
-    //     }
 }
 
 //===================End Main Content=====================
