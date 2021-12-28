@@ -35,7 +35,7 @@
             font-family: $font-family-poppins;
 
             .breadcrumb-item::before {
-                color: $white;
+                color: $white !important;
             }
         }
     }
@@ -50,7 +50,7 @@
     }
 }
 //section second
-.about-section-2{
+.about-experts{
      .image-column{
          img{
             object-fit: cover;
@@ -58,6 +58,7 @@
                 height:650px;
             }
          }
+         
     }
     .column-wraping{
         @include media-breakpoint-min-large{

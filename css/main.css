@@ -218,6 +218,9 @@ body .protofolio-block .figure:hover .figure-caption {
 body .life-section .web-ul {
   font-size: 0.75rem;
 }
+body .life-section .web-ul a {
+  line-height: 3rem;
+}
 body .life-section .view-button:hover {
   background-color: #fff;
   color: #212121;
@@ -11217,28 +11220,36 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 .about-banner-section .about-header-section .about-order-list .breadcrumb-item::before {
-  color: #fff;
+  color: #fff !important;
 }
 
 .about-main-content .about-heading {
   font-family: "Josefin Sans";
 }
 
-.about-section-2 .image-column img {
+.about-experts .image-column img {
   object-fit: cover;
 }
 @media (min-width: 992px) {
-  .about-section-2 .image-column img {
+  .about-experts .image-column img {
     height: 650px;
   }
 }
 @media (min-width: 992px) {
-  .about-section-2 .column-wraping {
+  .about-experts .column-wraping {
     max-width: 450px;
   }
 }
-.about-section-2 .main-paragraph p {
+.about-experts .main-paragraph p {
   font-size: 13px;
+}
+
+.breadcrumb-item::before {
+  color: #fff !important;
+}
+
+.contact-us-heading {
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

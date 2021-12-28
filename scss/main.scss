@@ -360,6 +360,9 @@ body {
 
     .web-ul {
       font-size: $font-size-12;
+      a{
+        line-height:3rem;
+      }
     }
 
     .view-button {
@@ -486,4 +489,8 @@ body {
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+//=============importing about.scss file==================
 @import "about.scss";
+
+//===============importing contact.scss file===========
+@import "contact.scss";
