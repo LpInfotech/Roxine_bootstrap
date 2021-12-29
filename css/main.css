@@ -11252,4 +11252,29 @@ textarea.form-control-lg {
   letter-spacing: 2px;
 }
 
+.address-column {
+  font-size: 0.75rem;
+}
+
+.map-container {
+  line-height: 0;
+}
+
+#emailAddress {
+  letter-spacing: 3px;
+  font-size: 1.125rem;
+}
+
+#subscribeButton:hover {
+  color: #fff !important;
+  background-color: #333333;
+}
+
+.footer-ul a:hover {
+  color: #fff;
+}
+.footer-ul i:hover {
+  color: #5645ff;
+}
+
 /*# sourceMappingURL=main.css.map */
