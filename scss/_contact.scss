@@ -5,7 +5,11 @@
 }
 
 //=============contact us section===========
-
+.contact-us-section {
+    input , textarea{
+        border-color:$border-color;
+    }
+}
 .contact-us-heading{
     letter-spacing:2px;
 }
