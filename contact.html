@@ -376,7 +376,7 @@
     <main>
         <!-- contact banner section -->
         <section class="py-5 bg-dark">
-            <div class="container my-5">
+            <div class="container pt-5 my-5">
                 <h1 class="display-5 fw-bold mb-3 text-center text-white main-heading">Contact Us</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center small">
@@ -445,11 +445,14 @@
                                 placeholder="Message *" rows="5"></textarea>
                         </div>
                         <!-- /text area for message -->
+
+                        <!-- form button -->
                         <div class="col-12">
                             <button type="submit"
-                                class="btn btn-secondary roxin-button fw-bold text-white py-3 px-4 text-uppercase rounded-0">Send
-                                Message<i class="fas fa-chevron-right"></i></button>
+                                class="btn btn-secondary roxin-button fw-bold text-white py-sm-3 py-2 px-sm-5 px-3 text-uppercase rounded-0">Send
+                                Message<i class="fas fa-chevron-right ps-4"></i></button>
                         </div>
+                        <!-- /form button -->
                     </div>
                     <!-- address column -->
                     <div class="col-lg-6 ps-lg-5 address-column">
@@ -467,6 +470,7 @@
                                 </address>
                             </div>
                         </div>
+                        <!-- /row 1 -->
                         <!-- row 2 -->
                         <div
                             class="row justify-content-start justify-content-lg-center my-4 mb-lg-5 mt-lg-0 text-primary">
@@ -501,6 +505,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- /row 2 -->
                         <!-- row 3 -->
                         <div
                             class="row justify-content-start justify-content-lg-center my-4 mb-lg-5 mt-lg-0 text-primary">
@@ -521,24 +526,27 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- /row 3 -->
                     </div>
                 </div>
             </div>
             </div>
         </section>
         <!-- /End Get in touch with us -->
+
         <!-- Map location -->
         <section>
             <div class="container-fluid px-0 map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45505.99536048985!2d75.38235156600327!3d32.03533345890258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b926db4af6e6d%3A0x2fda9aabada0f98b!2sGurdaspur%2C%20Punjab%20143521!5e0!3m2!1sen!2sin!4v1640758800874!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33012.865096105044!2d-0.19547112154320603!3d51.52777454627274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d0a98a6c1ed5df%3A0xf4e19525332d8ea8!2sEngland%2C%20UK!5e0!3m2!1sen!2sin!4v1640808453965!5m2!1sen!2sin"
                     width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
         <!-- /Map location -->
     </main>
-    <!-- /main -->
-    <!-- footer -->
+    <!-- /End main section -->
+
+    <!-- footer section -->
     <footer>
         <section class="py-5 bg-black">
             <div class="container my-lg-5 my-2">
@@ -546,47 +554,76 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <input type="email"
-                            class="form-control text-primary rounded-0 bg-dark border-primary py-2 border-2"
+                            class="form-control text-primary rounded-0 bg-dark border-primary py-2 border-2 lh-lg"
                             placeholder="Email Address" id="emailAddress" aria-label="email address">
                     </div>
                     <div class="col-lg-2 text-center my-4 my-lg-0">
-                        <button type="submit" id="subscribeButton" class="btn btn-dark roxin-button fw-bold text-primary px-4 text-uppercase rounded-0 py-2
+                        <button type="submit" id="subscribeButton" class="btn btn-dark roxin-button fw-bold text-primary px-4 text-uppercase rounded-0 py-2 lh-lg
                              border-primary">Subscribe</button>
                     </div>
                 </div>
                 <!-- /Email subscription form -->
+
                 <!-- our address -->
                 <div class="row py-5 my-lg-5 footer-ul">
-                    <div class="col-md-4 d-flex justify-content-md-center my-2">
-                        <div class="px-4 align-self-center"><i class="fas fa-mobile-alt text-primary fs-2"></i></div>
-                        <ul class="list-unstyled text-primary lh-lg mb-0 align-self-center">
-                            <li>Call Us On</li>
-                            <li><a href="#" class="text-decoration-none">977 985 1108896</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-md-center my-2">
-                        <div class="px-4 align-self-center"><i class="fas fa-envelope-square text-primary fs-2"></i></div>
-                        <ul class="list-unstyled text-primary lh-lg mb-0 align-self-center">
-                            <li>Email Us At</li>
-                            <li>Email at <a href="#" class="text-decoration-none">Waituk.net</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-md-center my-2">
-                        <div class="px-4 align-self-center"><i class="fas fa-map-marker-alt fs-2 text-primary"></i>
+                    <!-- col 1 -->
+              <div class="col-md-4">
+                  <div class="row">
+                      <div class="col-2 d-flex">
+                        <div class="pe-4 align-self-center"><i class="fas fa-mobile-alt text-primary fs-2"></i></div>
+                      </div>
+                      <div class="col lh-lg">
+                          <div class="text-primary">
+                              <p class="mb-0">Call Us On</p>
+                              <p class="mb-0"><a href="#" class="text-decoration-none">977 985 1108896</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /col 1 -->
+
+              <!-- col 2 -->
+              <div class="col-md-4">
+                  <div class="row">
+                      <div class="col-2 d-flex">
+                        <div class="pe-4 align-self-center"><i class="fas fa-envelope-square text-primary fs-2"></i>
                         </div>
-                        <ul class="list-unstyled text-primary lh-lg mb-0 align-self-center">
-                            <li>Visit Office</li>
-                            <li>707 Ive Corner - London</li>
-                        </ul>
-                    </div>
+                      </div>
+                      <div class="col lh-lg">
+                          <div class="text-primary">
+                              <p class="mb-0">Email Us At</p>
+                              <p class="mb-0">Email at <a href="#" class="text-decoration-none">Waituk.net</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /col 2 -->
+
+              <!-- col 3 -->
+              <div class="col-md-4">
+                  <div class="row">
+                      <div class="col-2 d-flex">
+                        <div class="pe-4 align-self-center"><i class="fas fa-map-marker-alt fs-2 text-primary"></i>
+                        </div>
+                      </div>
+                      <div class="col lh-lg">
+                          <div class="text-primary">
+                              <p class="mb-0">Visit Office</p>
+                              <p class="mb-0">707 Ive Corner - London</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /col 3 -->
                 </div>
                 <!-- /our address -->
+
+                <!-- You can link us with this Information -->
                 <ul class="list-unstyled my-auto text-center footer-ul">
                     <li class="d-inline-block pe-md-4 me-md-2 pe-3"><a href="#"><i
                                 class="fab fa-facebook-f fs-3"></i></a>
                     </li>
-                    <li class="d-inline-block pe-md-4 me-md-2 pe-3"><a href="#"><i
-                                class="fab fa-twitter fs-3"></i></a>
+                    <li class="d-inline-block pe-md-4 me-md-2 pe-3"><a href="#"><i class="fab fa-twitter fs-3"></i></a>
                     </li>
                     <li class="d-inline-block pe-md-4 me-md-2 pe-3"><a href="#"><i
                                 class="fab fa-google-plus-g fs-3"></i></a></li>
@@ -597,8 +634,10 @@
                                 class="fas fa-basketball-ball fs-3"></i></a>
                     </li>
                 </ul>
+                <!-- /You can link us with this Information -->
             </div>
         </section>
+
         <!-- copyright -->
         <section class="bg-dark">
             <div class="container">
@@ -608,11 +647,9 @@
         </section>
         <!-- /copyright -->
     </footer>
-    <!-- /End footer -->
+    <!-- /End Footer section -->
 
 </body>
-
-<!-- /End Footer section -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
